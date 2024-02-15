@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: blue;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fbr%2Fsearch%3Fk%3Dretrowave&psig=AOvVaw2MVDghRkBidq4_BA1yT5sf&ust=1708080799630000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCID20fyWrYQDFQAAAAAdAAAAABAQ);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+section{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    background-color: #fff;
+    width: 380px;
+    height: auto;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+section h1,input[type=number],input[type=button],select,label{
+    display: block;
+}
+
+section input[type=number]{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+section input[type=number],input[type=button]{
+    width: 100%;
+    padding: 6px;
+}
+
+section select{
+    width: 100%;
+    margin: 6px 0px;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    padding: 15px;
+}
+
+section input[type=button]{
+    background-color: #282424;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+section input[type=button]:hover{
+    background-color: black;
+}
