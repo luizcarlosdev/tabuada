@@ -9,29 +9,12 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary"  class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Meus Projetos</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="https://luizcarlosdev.github.io/novoprojeto/" target="_blank">Escritos Seletos</a>
-              <a class="nav-link" href="https://luizcarlosdev.github.io/reciclavel/" target="_blank">Reciclável</a>
-              <a class="nav-link" href="https://luizcarlosdev.github.io/list/" target="_blank">Lista de Tarefas</a>
-              <!-- <a class="nav-link disabled" aria-disabled="false">Disabled</a> -->
-            </div>
-          </div>
-        </div>
-      </nav>
-
       <div class="container">
           <section>
-            <h1>Tabuada</h1>
+            <h1 onclick="javascript:window.location.reload()">Tabuada</h1>
             <label for="num">Digite um número</label>
             <input type="number" name="num" id="num" required>
-            <select name="seltab" id="seltab" size="11"></select>
+           <div id="select"></div>
             <input type="button" value="Gerar Tabuada" onclick="tabuada()">
           </section>
       </div>
